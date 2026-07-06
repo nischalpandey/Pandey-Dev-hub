@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   add-repo:
-    if: contains(github.event.issue.labels.*.name, 'add-repo')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
