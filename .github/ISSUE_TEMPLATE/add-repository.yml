@@ -1,0 +1,40 @@
+name: "➕ Add Repository"
+description: Submit a GitHub repository URL to add to the hub
+title: "[Add Repo]: "
+labels: ["add-repo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a GitHub repository URL below and submit. A bot will fetch its
+        metadata, add it to the collection, and regenerate the README —
+        no manual editing needed.
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: Full URL of the GitHub repository
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Leave as Auto-detect to classify it automatically from its GitHub topics/language
+      options:
+        - "Auto-detect"
+        - "AI & Machine Learning"
+        - "Data Science"
+        - "Web Development"
+        - "Mobile Development"
+        - "DevOps & Infrastructure"
+        - "Security"
+        - "Game Development"
+        - "Developer Tools"
+        - "Other Resources"
+      default: 0
+    validations:
+      required: false

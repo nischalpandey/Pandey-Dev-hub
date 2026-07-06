@@ -1,0 +1,86 @@
+name: Add Repository (from Issue)
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add-repo:
+    if: contains(github.event.issue.labels.*.name, 'add-repo')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extract URL and category from issue body
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+
+            const urlMatch = body.match(/### Repository URL\s+([^\s#][^\n]*)/i);
+            const catMatch = body.match(/### Category\s+([^\n]*)/i);
+
+            const repoUrl = urlMatch ? urlMatch[1].trim() : "";
+            let category = catMatch ? catMatch[1].trim() : "Auto-detect";
+            if (!category || category.toLowerCase() === "_no response_") {
+              category = "Auto-detect";
+            }
+
+            core.setOutput("repo_url", repoUrl);
+            core.setOutput("category", category);
+
+      - name: Validate URL was found
+        if: steps.parse.outputs.repo_url == ''
+        run: |
+          echo "Could not find a repository URL in the issue body." >&2
+          exit 1
+
+      - name: Add repository to data store
+        working-directory: scripts
+        env:
+          REPO_URL: ${{ steps.parse.outputs.repo_url }}
+          CATEGORY: ${{ steps.parse.outputs.category }}
+        run: python add_repo.py
+
+      - name: Regenerate README
+        working-directory: scripts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "resource-hub-bot"
+          git config user.email "actions@github.com"
+          git add data/repositories.json README.md
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Add repository: ${{ steps.parse.outputs.repo_url }} (#${{ github.event.issue.number }})"
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "✅ Added to the hub and README regenerated. Thanks for the contribution!"
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: "closed"
+            });

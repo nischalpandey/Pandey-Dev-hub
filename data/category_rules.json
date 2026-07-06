@@ -1,0 +1,57 @@
+{
+  "order": [
+    "AI & Machine Learning",
+    "Data Science",
+    "Web Development",
+    "Mobile Development",
+    "DevOps & Infrastructure",
+    "Security",
+    "Game Development",
+    "Developer Tools",
+    "Other Resources"
+  ],
+  "rules": {
+    "AI & Machine Learning": [
+      "ai", "artificial-intelligence", "machine-learning", "ml", "deep-learning",
+      "neural-network", "llm", "large-language-model", "gpt", "nlp",
+      "computer-vision", "generative-ai", "langchain", "transformer",
+      "reinforcement-learning", "pytorch", "tensorflow", "huggingface", "rag",
+      "prompt-engineering", "chatbot"
+    ],
+    "Data Science": [
+      "data-science", "pandas", "numpy", "data-analysis", "data-visualization",
+      "jupyter", "statistics", "big-data", "data-engineering", "etl",
+      "spark", "data-pipeline"
+    ],
+    "Web Development": [
+      "web", "frontend", "front-end", "backend", "back-end", "react", "vue",
+      "angular", "nextjs", "next-js", "html", "css", "javascript", "typescript",
+      "node", "nodejs", "express", "django", "flask", "php", "fullstack",
+      "full-stack", "svelte", "web-development", "webapp"
+    ],
+    "Mobile Development": [
+      "android", "ios", "flutter", "react-native", "mobile", "swift", "kotlin",
+      "mobile-app", "ionic", "xamarin"
+    ],
+    "DevOps & Infrastructure": [
+      "devops", "ci-cd", "cicd", "docker", "kubernetes", "k8s", "terraform",
+      "ansible", "infrastructure", "cloud", "aws", "gcp", "azure",
+      "monitoring", "observability", "iac", "sre", "github-actions"
+    ],
+    "Security": [
+      "security", "cybersecurity", "pentest", "penetration-testing",
+      "encryption", "vulnerability", "malware", "ctf", "hacking", "infosec",
+      "appsec", "cryptography", "owasp"
+    ],
+    "Game Development": [
+      "game", "gamedev", "game-development", "unity", "unreal-engine",
+      "godot", "game-engine"
+    ],
+    "Developer Tools": [
+      "cli", "tool", "productivity", "extension", "plugin", "framework",
+      "library", "sdk", "boilerplate", "template", "developer-tools",
+      "vscode", "utility", "automation"
+    ]
+  },
+  "fallback": "Other Resources"
+}

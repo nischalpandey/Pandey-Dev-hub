@@ -1,0 +1,49 @@
+name: Add Repository (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo_url:
+        description: "GitHub repository URL (e.g. https://github.com/owner/repo)"
+        required: true
+      category:
+        description: "Category (leave blank to auto-detect)"
+        required: false
+        default: "Auto-detect"
+
+permissions:
+  contents: write
+
+jobs:
+  add-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Add repository to data store
+        working-directory: scripts
+        env:
+          REPO_URL: ${{ inputs.repo_url }}
+          CATEGORY: ${{ inputs.category }}
+        run: python add_repo.py
+
+      - name: Regenerate README
+        working-directory: scripts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "resource-hub-bot"
+          git config user.email "actions@github.com"
+          git add data/repositories.json README.md
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Add repository: ${{ inputs.repo_url }}"
+          git push
