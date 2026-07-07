@@ -4,7 +4,7 @@
 
 ### A curated, auto-updating directory of great GitHub repositories — no forks, just links.
 
-![Repositories](https://img.shields.io/badge/Repositories-5-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--07--07-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+![Repositories](https://img.shields.io/badge/Repositories-6-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--07--07-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
 **No forks. No clutter. Just a clean, always-current map of great repos.**
 
@@ -18,7 +18,7 @@
 
 - 🤖 [AI & Machine Learning](#ai--machine-learning) `1`
 - 🌐 [Web Development](#web-development) `3`
-- 📦 [Other Resources](#other-resources) `1`
+- 📦 [Other Resources](#other-resources) `2`
 
 ## 🤖 AI & Machine Learning
 
@@ -31,7 +31,7 @@
 
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
-| [**modelcontextprotocol/servers**](https://github.com/modelcontextprotocol/servers) | Model Context Protocol Servers | 88,138 | 11,171 | TypeScript | 2026-07-06 |
+| [**modelcontextprotocol/servers**](https://github.com/modelcontextprotocol/servers) | Model Context Protocol Servers | 88,138 | 11,170 | TypeScript | 2026-07-06 |
 | [**yarsa/nepal-compliance**](https://github.com/yarsa/nepal-compliance) | Open source ERP for Nepal with HR, Payroll & Accounting compliance, based on ERPNext by Frappe Technologies. | 147 | 76 | Python | 2026-06-15 |
 | [**kubowania/ecommerce-chat-helper**](https://github.com/kubowania/ecommerce-chat-helper) | Building an AI-Powered E-commerce Chat Assistant with MongoDB | 76 | 36 | TypeScript | 2025-07-10 |
 
@@ -41,6 +41,7 @@
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
 | [**speedyapply/2027-SWE-College-Jobs**](https://github.com/speedyapply/2027-SWE-College-Jobs) | 2027 SWE internship & new graduate job list updated daily | 7,945 | 384 | N/A | 2026-07-06 |
+| [**aslam-Hossain-YT/Camera-Surveillance-Car-using-ESP32**](https://github.com/aslam-Hossain-YT/Camera-Surveillance-Car-using-ESP32) | No description provided. | 15 | 7 | C++ | 2024-08-07 |
 
 ---
 
