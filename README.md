@@ -4,7 +4,7 @@
 
 ### A curated, auto-updating directory of great GitHub repositories — no forks, just links.
 
-![Repositories](https://img.shields.io/badge/Repositories-3-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--07--07-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+![Repositories](https://img.shields.io/badge/Repositories-4-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--07--07-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
 **No forks. No clutter. Just a clean, always-current map of great repos.**
 
@@ -17,7 +17,7 @@
 ## 📚 Categories
 
 - 🤖 [AI & Machine Learning](#ai--machine-learning) `1`
-- 🌐 [Web Development](#web-development) `1`
+- 🌐 [Web Development](#web-development) `2`
 - 📦 [Other Resources](#other-resources) `1`
 
 ## 🤖 AI & Machine Learning
@@ -32,6 +32,7 @@
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
 | [**yarsa/nepal-compliance**](https://github.com/yarsa/nepal-compliance) | Open source ERP for Nepal with HR, Payroll & Accounting compliance, based on ERPNext by Frappe Technologies. | 147 | 76 | Python | 2026-06-15 |
+| [**kubowania/ecommerce-chat-helper**](https://github.com/kubowania/ecommerce-chat-helper) | Building an AI-Powered E-commerce Chat Assistant with MongoDB | 76 | 37 | TypeScript | 2025-07-10 |
 
 
 ## 📦 Other Resources
