@@ -4,7 +4,7 @@
 
 ### A curated, auto-updating directory of great GitHub repositories — no forks, just links.
 
-![Repositories](https://img.shields.io/badge/Repositories-8-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--08--04-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+![Repositories](https://img.shields.io/badge/Repositories-8-blue?style=flat-square) ![Categories](https://img.shields.io/badge/Categories-3-informational?style=flat-square) ![Last%20Updated](https://img.shields.io/badge/Last%20Updated-2026--08--05-success?style=flat-square) ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
 **No forks. No clutter. Just a clean, always-current map of great repos.**
 
@@ -24,16 +24,16 @@
 
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
-| [**aishwaryanr/awesome-generative-ai-guide**](https://github.com/aishwaryanr/awesome-generative-ai-guide) | A one stop repository for generative AI research updates, interview resources, notebooks and much more! | 28,580 | 5,854 | HTML | 2026-07-28 |
-| [**menaceXnadin/nepse-historical-market-data-csv**](https://github.com/menaceXnadin/nepse-historical-market-data-csv) | This repo contains Historical Data of NEPSE in csv format which you can use it for Data Analysis ,Training... | 3 | 2 | N/A | 2026-08-03 |
+| [**aishwaryanr/awesome-generative-ai-guide**](https://github.com/aishwaryanr/awesome-generative-ai-guide) | A one stop repository for generative AI research updates, interview resources, notebooks and much more! | 28,604 | 5,858 | HTML | 2026-07-28 |
+| [**menaceXnadin/nepse-historical-market-data-csv**](https://github.com/menaceXnadin/nepse-historical-market-data-csv) | This repo contains Historical Data of NEPSE in csv format which you can use it for Data Analysis ,Training... | 3 | 2 | N/A | 2026-08-04 |
 
 
 ## 🌐 Web Development
 
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
-| [**modelcontextprotocol/servers**](https://github.com/modelcontextprotocol/servers) | Model Context Protocol Servers | 89,182 | 11,368 | TypeScript | 2026-08-03 |
-| [**yarsa/nepal-compliance**](https://github.com/yarsa/nepal-compliance) | Open source ERP for Nepal with HR, Payroll & Accounting compliance, based on ERPNext by Frappe Technologies. | 170 | 84 | Python | 2026-07-08 |
+| [**modelcontextprotocol/servers**](https://github.com/modelcontextprotocol/servers) | Model Context Protocol Servers | 89,228 | 11,387 | TypeScript | 2026-08-04 |
+| [**yarsa/nepal-compliance**](https://github.com/yarsa/nepal-compliance) | Open source ERP for Nepal with HR, Payroll & Accounting compliance, based on ERPNext by Frappe Technologies. | 170 | 85 | Python | 2026-08-05 |
 | [**kubowania/ecommerce-chat-helper**](https://github.com/kubowania/ecommerce-chat-helper) | Building an AI-Powered E-commerce Chat Assistant with MongoDB | 76 | 36 | TypeScript | 2025-07-10 |
 | [**sparshrestha/tech-in-nepal**](https://github.com/sparshrestha/tech-in-nepal) | List of tech in Nepal: startups, companies and entrepreneurship from Nepal in Technology. | 19 | 3 | JavaScript | 2026-08-03 |
 
@@ -42,7 +42,7 @@
 
 | Repository | Description | ⭐ Stars | 🍴 Forks | Language | Updated |
 |---|---|---|---|---|---|
-| [**speedyapply/2027-SWE-College-Jobs**](https://github.com/speedyapply/2027-SWE-College-Jobs) | 2027 SWE internship & new graduate job list updated daily | 8,632 | 402 | N/A | 2026-08-03 |
+| [**speedyapply/2027-SWE-College-Jobs**](https://github.com/speedyapply/2027-SWE-College-Jobs) | 2027 SWE internship & new graduate job list updated daily | 8,652 | 403 | N/A | 2026-08-04 |
 | [**aslam-Hossain-YT/Camera-Surveillance-Car-using-ESP32**](https://github.com/aslam-Hossain-YT/Camera-Surveillance-Car-using-ESP32) | No description provided. | 15 | 7 | C++ | 2024-08-07 |
 
 ---
@@ -67,5 +67,5 @@ Found a great repo that's missing? Open an [Add Repository issue](../../issues/n
 ---
 
 <div align="center">
-<sub>Last generated on 2026-08-04 • Powered by GitHub Actions</sub>
+<sub>Last generated on 2026-08-05 • Powered by GitHub Actions</sub>
 </div>
